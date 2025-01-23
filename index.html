@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+             <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Abhiram</div>
+                </div>
+                
+
+                
+             </header>
+             
+             <div class="container">
+                <div class="hero-pic">
+                    <img src="Profile.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Abhiram</h1>
+                    <p>
+                        I'm a passionate frontend developer with skills in HTML, CSS, and JavaScript, eager to build responsive and user-friendly websites. I’m focused on learning modern frameworks like React.js and improving web performance and accessibility.</p>
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/13P9XHeLDIOTWwfLSFa8yZxJ4iZh5mXXK/view?usp=drivesdk" class="btn active">Download CV</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+                    
+
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/abhi-ram-858437318"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Abbiram01"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="horizontal-line"/>
+
+            <div class="education-page">
+                <h1 class="education-heading mt-3 text-center">Education</h1>
+                <h4 class="education-year">2020-2024</h4>
+                <p class="eduaction-description">B.Tech: Graduated from Sreenidhi Institute Of Science And Technology in Mechanical Engineering, Hyderabad</p>
+                <h4 class="education-year">2018-2020</h4>
+                <p class="eduaction-description">12th Class: Completed 12th in Narayana jr.College, Hyderabad</p>
+                <h4 class="education-year">2017-2018</h4>
+                <p class="eduaction-description">10th Class:  10th in Sri chaitanya School, Siddipet</p>
+                
+            </div>
+            <h1 class="skills-heading text-center">Skills</h1>
+            <div  class="skills-page d-flex flex-row justify-content-center">
+                <div class="skills-card">
+                    <ul class="ul-list">
+                        <li class="skills-description">HTML</li>
+                        <li class="skills-description">css</li>
+                        <li class="skills-description">python</li>
+                        <li class="skills-description">sql</li>
+                        <li class="skills-description">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        
+
+        </div>
+    </div>
+
+    <div  id="contact" class="contact-page-card">
+        <h1 class="contact-main-heading text-center">Contact Me</h1>
+        <h2 class="contact-heading"> E-mail: abhiramabhi1415@gmail.com</h2>
+        <h2 class="contact-heading">Phone No: +919550996107</h2>
+        
+        
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".input");
+        var nav = document.querySelector(".navlinks");
+        var skillsBtn = document.getElementById("skills-btn");
+        var skillsSection = document.getElementById("skills-section");
+
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+    
+
+        var typed = new Typed(".input", {
+            strings: ["Fresher", "Frontend Developer"],
+            typeSpeed: 50,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+    
+     <script type="text/javascript" src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js"></script>
+</body>
+</html>
